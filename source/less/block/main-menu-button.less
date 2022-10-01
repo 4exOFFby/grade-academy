@@ -1,0 +1,22 @@
+.main-menu-button {
+  border: none;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  padding: 0;
+  box-sizing: border-box;
+  order: 2;
+}
+
+.main-menu-button__icon--hidden {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .main-menu-button {
+    display: none;
+  }
+}
