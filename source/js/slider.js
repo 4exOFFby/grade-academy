@@ -1,7 +1,7 @@
 const sliderPagination = document.querySelector(".main-slider__pagination-list");
 const paginationLinks = sliderPagination.children;
 const sliderButtonNext = document.querySelector(".main-slider__button--next");
-const sliderButtonPrevios = document.querySelector(".main-slider__button--previos");
+const sliderButtonPrevious = document.querySelector(".main-slider__button--previous");
 const sliderList = document.querySelector(".main-slider__list");
 const slides = sliderList.children;
 const sliderSection = document.querySelector(".main-slider");
@@ -43,7 +43,7 @@ const showNextSlide = () => {
   slides[i].classList.toggle("main-slider__item--active");
 }
 
-const showPreviosSlide = () => {
+const showPreviousSlide = () => {
   i--;
   const imgCount = slides.length;
   const currentSlide = document.querySelector(".main-slider__item--active");
@@ -95,4 +95,4 @@ paginationLinks[2].addEventListener('click', () => {
   sliderSection.classList.add("main-slider--gray");
 })
 
-export {showNextSlide, showPreviosSlide, sliderButtonNext, sliderButtonPrevios};
+export {showNextSlide, showPreviousSlide, sliderButtonNext, sliderButtonPrevious};
