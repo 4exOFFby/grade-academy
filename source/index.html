@@ -19,7 +19,7 @@
               <source class="main-navigation__logo-image main-navigation__logo-image--tablet" media="(min-width: 768px)" srcset="./images/svg/logo-tablet.svg" width="82" height="36">
               <source type="image/webp" media="(min-width: 1440px)" srcset="./images/svg/logo-desktop.webp">
               <source type="image/webp" media="(min-width: 768px)" srcset="./images/svg/logo-tablet.webp">
-              <source type="image/webp" src="./images/svg/logo-mobile.webp">
+              <!-- <source type="image/webp" srcset="./images/svg/logo-mobile.webp"> -->
               <img class="main-navigation__logo-image main-navigation__logo-image--mobile" src="./images/svg/logo-mobile.svg" width="32" height="36">
             </picture>
           </a>
@@ -162,8 +162,8 @@
       <!-- Features -->
       <section class="features">
         <div class="features-container">
-          <h2 class="features__title">Приемущества</h2>
-          <b class="features__title-description">Главные причины выбрать Drink2Go</b>
+          <b class="features__title">Приемущества</b>
+          <h2 class="features__title-description">Главные причины выбрать Drink2Go</h2>
           <ul class="features__list">
             <li class="features__item features-card features-card--time">
               <h3 class="features-card__title">Скорость</h3>
@@ -185,6 +185,94 @@
         </div>
       </section>
 
+      <!-- Catalog -->
+      <section class="catalog">
+        <div class="catalog-container">
+          <b class="catalog__mark">Каталог</b>
+          <h2 class="catalog__title">Каталог кофейных напитков</h2>
+
+          <!-- Sorting-form -->
+          <section class="catalog__form catalog-form">
+            <form class="catalog-form__form" action="#" method="post">
+              <div class="catalog-form__wrapper catalog-form__wrapper--range">
+                <h4 class="catalog-form__categories-title">Цена</h4>
+                <div class="catalog-form__range form-range">
+                  <div class="form-range__line">
+                    <div class="form-range__scale">
+                      <button class="form-range__button form-range__button--min" type="button"></button>
+                      <button class="form-range__button form-range__button--max" type="button"></button>
+                    </div>
+                  </div>
+                </div>
+                <label class="catalog-form__label" for="min-price">
+                  <span class="visually-hidden">Введите минимальную цену</span>
+                </label>
+                <label class="catalog-form__label" for="max-price">
+                  <span class="visually-hidden">Введите максимальную цену</span>
+                </label>
+                <div class="form-range__wrapper">
+                  <input class="form-range__input form-range__input--min-price" id="min-price" name="min-price" type="number" placeholder="0">
+                  <input class="form-range__input form-range__input--min-price" id="max-price" name="max-price" type="number" placeholder="900">
+                </div>
+              </div>
+              <div class="catalog-form__wrapper">
+                <h4 class="catalog-form__categories-title">Наличие молока</h4>
+                <ul class="catalog-form__list">
+                  <li class="catalog-form__item">
+                    <input class="catalog-form__input catalog-form__input--radio visually-hidden" id="any" type="radio" name="milk" value="any" checked>
+                    <label class="catalog-form__label catalog-form__label--radio" for="any">Неважно</label>
+                  </li>
+                  <li class="catalog-form__item">
+                    <input class="catalog-form__input catalog-form__input--radio visually-hidden" id="animal" type="radio" name="milk" value="animal">
+                    <label class="catalog-form__label catalog-form__label--radio" for="animal">Только животное</label>
+                  </li>
+                  <li class="catalog-form__item">
+                    <input class="catalog-form__input catalog-form__input--radio visually-hidden" id="nature" type="radio" name="milk" value="nature">
+                    <label class="catalog-form__label catalog-form__label--radio" for="nature">Только растительное</label>
+                  </li>
+                  <li class="catalog-form__item">
+                    <input class="catalog-form__input catalog-form__input--radio visually-hidden" id="without-milk" type="radio" name="milk" value="without-milk" disabled>
+                    <label class="catalog-form__label catalog-form__label--radio catalog-form__label--disabled" for="without-milk">Без молока</label>
+                  </li>
+                </ul>
+              </div>
+              <div class="catalog-form__wrapper">
+                <h4 class="catalog-form__categories-title">Страна произрастания</h4>
+                <ul class="catalog-form__list">
+                  <li class="catalog-form__item">
+                    <input class="catalog-form__input catalog-form__input--checkbox visually-hidden" id="brazilia" type="checkbox" name="brazilia" checked>
+                    <label class="catalog-form__label catalog-form__label--checkbox" for="brazilia">Бразилия</label>
+                  </li>
+                  <li class="catalog-form__item">
+                    <input class="catalog-form__input catalog-form__input--checkbox visually-hidden" id="ephiophia" type="checkbox" name="ephiophia">
+                    <label class="catalog-form__label catalog-form__label--checkbox" for="ephiophia">Эфиопия</label>
+                  </li>
+                  <li class="catalog-form__item">
+                    <input class="catalog-form__input catalog-form__input--checkbox visually-hidden" id="columbia" type="checkbox" name="columbia">
+                    <label class="catalog-form__label catalog-form__label--checkbox" for="columbia">Колумбия</label>
+                  </li>
+                  <li class="catalog-form__item">
+                    <input class="catalog-form__input catalog-form__input--checkbox visually-hidden" id="costa-rika" type="checkbox" name="costa-rika">
+                    <label class="catalog-form__label catalog-form__label--checkbox" for="costa-rika">Коста-Рика</label>
+                  </li>
+                  <li class="catalog-form__item">
+                    <input class="catalog-form__input catalog-form__input--checkbox visually-hidden" id="peru" type="checkbox" name="milk" value="peru" disabled>
+                    <label class="catalog-form__label catalog-form__label--checkbox catalog-form__label--disabled" for="peru">Перу</label>
+                  </li>
+                </ul>
+              </div>
+              <div class="catalog-form__wrapper catalog-form__wrapper--button-wrapper">
+                <button class="catalog-form__button catalog-form__button--submit" type="submit">Применить фильтр</button>
+                <button class="catalog-form__button catalog-form__button--reset" type="reset">Сбросить фильтр</button>
+              </div>
+            </form>
+          </section>
+
+          <!-- Sorting-result -->
+          <section class="catalog__results catalog-results"></section>
+        </div>
+      </section>
+
       <!-- Map -->
       <section class="map">
         <div class="map__wrapper" id="map"></div>
@@ -200,7 +288,7 @@
             <picture class="main-footer__logo-pictures">
               <source class="main-footer__logo-image main-footer__logo-image--tablet" media="(min-width: 768px)" srcset="./images/svg/logo-desktop.svg" width="170" height="36">
               <source type="image/webp" media="(min-width: 768px)" srcset="./images/svg/logo-desktop.webp">
-              <source type="image/webp" src="./images/svg/logo-mobile.webp">
+              <source type="image/webp" srcset="./images/svg/logo-mobile.webp">
               <img class="main-footer__logo-image main-footer____logo-image--mobile" src="./images/svg/logo-tablet.svg" width="82" height="36">
             </picture>
           </a>
