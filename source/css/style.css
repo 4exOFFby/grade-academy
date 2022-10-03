@@ -961,4 +961,17 @@ body {
     text-align: center;
   }
 }
+.map__wrapper {
+  height: 420px;
+}
+@media (min-width: 768px) {
+  .map__wrapper {
+    height: 480px;
+  }
+}
+@media (min-width: 1440px) {
+  .map__wrapper {
+    height: 540px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
