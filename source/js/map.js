@@ -13,7 +13,7 @@ const map = L.map('map')
 
 
 const mainPinIcon = L.icon({
-  iconUrl: '../../images/svg/background-svg/map-mark.svg',
+  iconUrl: '/build/images/svg/background-svg/map-mark.svg',
   iconSize: [38, 50],
   iconAnchor: [26, 52],
 });
