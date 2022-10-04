@@ -34,3 +34,19 @@
     line-height: 64px;
   }
 }
+
+@media (min-width: @desktop-width) {
+  .catalog__grid-container {
+    display: grid;
+    grid-template-columns: 318px 1fr;
+    column-gap: 30px;
+  }
+
+  .catalog__mark {
+    grid-column: 1/3;
+  }
+
+  .catalog__title {
+    grid-column: 1/3;
+  }
+}
