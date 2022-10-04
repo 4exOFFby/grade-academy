@@ -1,0 +1,1 @@
+const sortingMenuButton=document.querySelector(".catalog-results__sorting-button"),openSortingMenuHandler=t=>{t.preventDefault();const o=document.querySelector(".catalog-results__sorting-list");sortingMenuButton.classList.toggle("catalog-results__sorting-button--open"),o.classList.toggle("catalog-results__sorting-list--closed")};export{sortingMenuButton,openSortingMenuHandler};
