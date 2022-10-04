@@ -122,6 +122,20 @@ body {
 .main-header {
   background-color: #ffffff;
 }
+@media (max-width: 767px) {
+  .main-header__navigation--no-js.main-header__navigation {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .main-header__navigation--no-js.main-header__navigation .main-header__menu {
+    display: flex;
+    order: 3;
+    position: static;
+  }
+  .main-header__navigation--no-js.main-header__navigation .main-header__menu-button {
+    display: none;
+  }
+}
 .main-navigation {
   position: relative;
   display: flex;
