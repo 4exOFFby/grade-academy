@@ -64,13 +64,14 @@
   color: #333333;
   padding: 4px 26px;
   box-sizing: border-box;
+  appearance: none;
+}
+
+.form-range__input[type="number"] {
+  appearance: textfield;
 }
 
 @media (min-width: @tablet-width) {
-  .catalog-form__wrapper--range {
-    width: 220px;
-  }
-
   .form-range__line {
     width: 220px;
   }
@@ -95,10 +96,6 @@
 
   .form-range__scale {
     width: 274px;
-  }
-
-  .catalog-form__wrapper--range {
-    width: 318px;
   }
 
   .form-range__input {

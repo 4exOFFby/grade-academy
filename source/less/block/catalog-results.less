@@ -53,6 +53,8 @@
   text-align: right;
   color: #7859cf;
   text-decoration: none;
+  border: none;
+  background-color: transparent;
 }
 
 .catalog-results__sorting-button::after {
@@ -72,7 +74,9 @@
 }
 
 .catalog-results__sorting-link {
-  display: block;
+  display: inline-block;
+  width: 195px;
+  box-sizing: border-box;
   text-align: start;
   font-family: "Montserrat", sans-serif;
   font-style: normal;
@@ -82,9 +86,11 @@
   color: #7859cf;
   text-decoration: none;
   padding: 8px 20px;
+  border: none;
+  background-color: transparent;
 
   &:hover {
-    background: #f0ebff;
+    background-color: #f0ebff;
   }
 }
 
@@ -92,6 +98,10 @@
   background-color: #7859cf;
   border-radius: 4px 4px 0 0;
   color: #ffffff;
+
+  &:hover {
+    background-color: #7859cf;
+  }
 }
 
 .catalog-results__list {

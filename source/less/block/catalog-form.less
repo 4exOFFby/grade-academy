@@ -28,6 +28,7 @@
   font-size: 16px;
   line-height: 24px;
   color: #333333;
+  cursor: pointer;
 }
 
 .catalog-form__label--radio::before {
@@ -48,6 +49,7 @@
 
 .catalog-form__label--disabled {
   color: #bdbdbd;
+  cursor: default;
 }
 
 .catalog-form__input--radio:checked + .catalog-form__label--radio::before {
@@ -145,6 +147,10 @@
 }
 
 @media (min-width: @tablet-width) and (max-width: 1439px) {
+  .catalog-form__wrapper--range {
+    width: 220px;
+  }
+
   .catalog-form__form {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -172,6 +178,10 @@
 }
 
 @media (min-width: @desktop-width) {
+  .catalog-form__wrapper--range {
+    width: 318px;
+  }
+
   .catalog-form__form {
     width: 318px;
   }
