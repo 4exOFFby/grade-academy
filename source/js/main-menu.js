@@ -1,7 +1,8 @@
-const menuButton = document.querySelector('.main-menu-button');
-const mainMenu = document.querySelector('.pages-navigation');
-const imageClosed = menuButton.querySelector('.main-menu-button__icon--closed');
-const imageOpened = menuButton.querySelector('.main-menu-button__icon--open');
+const mainNavigation = document.querySelector('.main-navigation')
+const menuButton = mainNavigation.querySelector('.main-menu-button');
+const mainMenu = mainNavigation.querySelector('.pages-navigation');
+const imageClosed = mainNavigation.querySelector('.main-menu-button__icon--closed');
+const imageOpened = mainNavigation.querySelector('.main-menu-button__icon--open');
 
 
 
@@ -12,4 +13,4 @@ const menuToggler = () => {
 }
 
 
-export {menuToggler, menuButton};
+export {menuToggler, menuButton, mainNavigation};

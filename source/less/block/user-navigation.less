@@ -11,12 +11,28 @@
   height: 60px;
 }
 
+.user-navigation__link-icon {
+  fill: #333333;
+}
+
 .user-navigation__link {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 60px;
   height: 60px;
+
+  &:hover {
+    .user-navigation__link-icon,
+    .user-navigation__text {
+      fill: #7859cf;
+      color: #7859cf;
+    }
+  }
+
+  &:active {
+    background-color: #f0ebff;
+  }
 }
 
 .user-navigation__text {

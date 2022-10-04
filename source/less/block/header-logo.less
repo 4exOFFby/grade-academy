@@ -1,0 +1,27 @@
+.header-logo__image--tablet {
+  display: none;
+}
+
+.header-logo__image--desktop {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .header-logo__image--mobile {
+    display: none;
+  }
+
+  .header-logo__image--tablet {
+    display: block;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .header-logo__image--tablet {
+    display: none;
+  }
+
+  .header-logo__image--desktop {
+    display: block;
+  }
+}
