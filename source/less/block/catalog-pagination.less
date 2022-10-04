@@ -1,0 +1,101 @@
+.catalog-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.catalog-pagination__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 160px;
+}
+
+.catalog-pagination__link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #7859cf;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.catalog-pagination__link--current {
+  background-color: transparent;
+  color: #333333;
+}
+
+.catalog-pagination__link-text {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: #7859cf;
+  text-decoration: none;
+  display: none;
+}
+
+
+.catalog-pagination__link--button {
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.catalog-pagination__link--button-previous {
+  background-image: url("../images/svg/background-svg/arrow-left.svg");
+}
+
+.catalog-pagination__link--button-next {
+  background-image: url("../images/svg/background-svg/arrow-right.svg");
+}
+
+@media (min-width: @tablet-width) {
+  .catalog-pagination__link--button {
+    display: flex;
+    align-items: center;
+    width: 150px;
+    min-height: 40px;
+    background-image: none;
+  }
+
+  .catalog-pagination__link-text {
+    display: inline;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .catalog-pagination {
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin-top: 70px;
+  }
+
+  .catalog-pagination__link {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .catalog-pagination__link--button-previous {
+    border-radius: 4px 0 0 4px;
+  }
+
+  .catalog-pagination__link--button-next {
+    border-radius: 0 4px 4px 0;
+  }
+}

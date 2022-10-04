@@ -1,0 +1,86 @@
+.product-card {
+  padding: 40px 20px 20px 20px;
+  background-color: #ffffff;
+  border-radius: 4px;
+}
+
+.product-card__image {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 24px;
+}
+
+.product-card__link {
+  text-decoration: none;
+}
+
+.product-card__title {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+  color: #333333;
+  margin: 0;
+  margin-bottom: 4px;
+}
+
+.product-card__description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.product-card__wrapper {
+  margin: 0;
+  display: flex;
+  width: 240px;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.product-card__price {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+  color: #333333;
+}
+
+.product-card__by-link {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  width: 141px;
+  min-height: 36px;
+  box-sizing: border-box;
+  align-items: center;
+  padding: 8px 20px 8px 46px;
+  color: #ffffff;
+  background: #7859cf;
+  border-radius: 4px;
+  text-decoration: none;
+  background-image: url("../images/svg/background-svg/basket-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 20px 10px;
+}
+
+@media (min-width: @tablet-width) {
+  .product-card {
+    padding: 50px 30px 30px 30px;
+  }
+
+  .product-card__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .product-card__wrapper {
+    width: 289px;
+  }
+}
