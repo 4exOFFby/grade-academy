@@ -28,10 +28,10 @@
           </a>
           <span class="main-navigation__logo-text">Интернет-магазин кофейных напитков</span>
           <button class="main-navigation__menu-button main-menu-button main-header__menu-button" type="button">
-            <svg class="main-menu-button__icon main-menu-button__icon--closed" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="main-menu-button__icon main-menu-button__icon--closed" width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
               <use xlink:href="./img/svg/sprite.svg#menu-closed"></use>
             </svg>
-            <svg class="main-menu-button__icon main-menu-button__icon--open main-menu-button__icon--hidden" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="main-menu-button__icon main-menu-button__icon--open main-menu-button__icon--hidden" width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
               <use xlink:href="./img/svg/sprite.svg#menu-open"></use>
             </svg>
           </button>
@@ -229,8 +229,8 @@
                   <span class="visually-hidden">Введите максимальную цену</span>
                 </label>
                 <div class="form-range__wrapper">
-                  <input class="form-range__input form-range__input--min-price" id="min-price" name="min-price" type="number" placeholder="0">
-                  <input class="form-range__input form-range__input--min-price" id="max-price" name="max-price" type="number" placeholder="900">
+                  <input class="form-range__input form-range__input--min-price" id="min-price" name="min-price" type="number" value="0">
+                  <input class="form-range__input form-range__input--min-price" id="max-price" name="max-price" type="number" value="900">
                 </div>
               </div>
               <div class="catalog-form__wrapper">
@@ -429,6 +429,9 @@
             <!-- Catalog Pagination -->
             <div class="catalog-results__pagination-list-wrapper catalog-pagination">
               <a class="catalog-pagination__link catalog-pagination__link--button catalog-pagination__link--button-previous" href="#">
+                <svg class="catalog-pagination__link-icon" width="6" height="10" viewBox="0 0 6 10" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="./img/svg/sprite.svg#arrow-left"></use>
+                </svg>
                 <span class="catalog-pagination__link-text">Назад</span>
               </a>
               <ol class="catalog-pagination__list">
@@ -443,6 +446,9 @@
                 </li>
               </ol>
               <a class="catalog-pagination__link catalog-pagination__link--button catalog-pagination__link--button-next" href="#">
+                <svg class="catalog-pagination__link-icon" width="6" height="10" viewBox="0 0 6 10" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="./img/svg/sprite.svg#arrow-right"></use>
+                </svg>
                 <span class="catalog-pagination__link-text">Вперёд</span>
               </a>
             </div>
@@ -482,21 +488,21 @@
           <ul class="main-footer__social-list">
             <li class="main-footer__social-item">
               <a class="main-footer__social-link" href="#">
-                <svg class="main-footer__social-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="main-footer__social-icon" width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <use xlink:href="./img/svg/sprite.svg#vk-icon"></use>
                 </svg>
               </a>
             </li>
             <li class="main-footer__social-item">
               <a class="main-footer__social-link" href="#">
-                <svg class="main-footer__social-icon" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="main-footer__social-icon" width="22" height="22" viewBox="0 0 22 22" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <use xlink:href="./img/svg/sprite.svg#pintrest-icon"></use>
                 </svg>
               </a>
             </li>
             <li class="main-footer__social-item">
               <a class="main-footer__social-link" href="#">
-                <svg class="main-footer__social-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="main-footer__social-icon" width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <use xlink:href="./img/svg/sprite.svg#ok-icon"></use>
                 </svg>
               </a>
@@ -559,7 +565,13 @@
       <section class="footer-copyright">
         <h2 class="visually-hidden">О разработчике приложения</h2>
         <div class="footer-container footer-copyright__wrapper">
-          <a class="footer-copyright__link" href="https://htmlacademy.ru/intensive/adaptive">Разработано в HTML Academy</a>
+          <span class="footer-copyright__text">Разработано в</span>
+          <a class="footer-copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+            HTML Academy
+            <svg class="footer-copyright__link-icon" width="12" height="16" viewBox="0 0 12 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="./img/svg/sprite.svg#html-logo"></use>
+            </svg>
+          </a>
         </div>
       </section>
     </footer>

@@ -32,6 +32,8 @@
 
 .main-slider__image {
   margin-bottom: 10px;
+  width: 280px;
+  height: 280px;
 }
 
 .main-slider__title {
@@ -93,6 +95,20 @@
   color: #ffffff;
   text-decoration: none;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: #9070ec;
+    outline: none;
+  }
+
+  &:active {
+    background-color: #593cac;
+  }
+
+  &:disabled {
+    background-color: #bdbdbd;
+  }
 }
 
 .main-slider__button-wrapper {
@@ -115,11 +131,27 @@
 
   &:hover,
   &:focus {
+    background-image: linear-gradient(90deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
     outline: none;
   }
 
   &:active {
-    background-color: transparent;
+    background-image: linear-gradient(90deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0) 100%);
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
+}
+
+.main-slider__button--next {
+  &:hover,
+  &:focus {
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
+  }
+
+  &:active {
+    background-image: linear-gradient(90deg, rgba(120, 89, 207, 0) 0%, rgba(120, 89, 207, 0.25) 100%);
   }
 }
 
@@ -175,6 +207,11 @@
     }
   }
 
+  .main-slider__image {
+    width: 476px;
+    height: 476px;
+  }
+
   .main-slider__price-wrapper {
     order: -1;
   }
@@ -222,6 +259,8 @@
   }
 
   .main-slider__image {
+    width: 600px;
+    height: 600px;
     grid-column: 1/2;
     grid-row: 1/7;
   }
@@ -294,6 +333,12 @@
     cursor: pointer;
     border: none;
     background-color: transparent;
+
+    &:hover,
+    &:focus {
+      background-image: linear-gradient(transparent 9px, rgba(120, 89, 207, 0.25) 9px, rgba(120, 89, 207, 0.25) 15px, transparent 15px);
+      outline: none;
+    }
   }
 
   .main-slider__pagination-item--active {

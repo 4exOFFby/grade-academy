@@ -33,6 +33,16 @@
   &:active {
     background-color: #f0ebff;
   }
+
+  &:focus {
+    outline: none;
+
+    .user-navigation__link-icon,
+    .user-navigation__text {
+      color: #7859cf;
+      fill: #7859cf;
+    }
+  }
 }
 
 .user-navigation__text {
@@ -48,6 +58,12 @@
   .user-navigation__link {
     width: 60px;
     height: 80px;
+
+    &:active {
+      .user-navigation__link-icon {
+        background-color: #f0ebff;
+      }
+    }
   }
 }
 
@@ -85,6 +101,10 @@
 
     &:hover {
       color: #7859cf;
+    }
+
+    &:active {
+      background-color: #f0ebff;
     }
   }
 }

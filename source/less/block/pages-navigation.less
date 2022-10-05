@@ -22,7 +22,6 @@
 .pages-navigation__item {
   display: block;
   width: 320px;
-  padding: 20px 20px;
   box-sizing: border-box;
   text-align: center;
 }
@@ -42,6 +41,15 @@
   text-decoration: none;
   color: #333333;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+
+  &:active {
+    background-color: #f0ebff;
+  }
 }
 
 .pages-navigation--closed {
@@ -95,6 +103,11 @@
   }
 
   .pages-navigation__link:hover {
+    color: #7859cf;
+  }
+
+  .pages-navigation__link:focus {
+    outline: none;
     color: #7859cf;
   }
 }
