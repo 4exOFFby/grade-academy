@@ -1,9 +1,21 @@
+.form-range--disabled {
+  .form-range__line,
+  .form-range__scale,
+  .form-range__button {
+    background-color: #e2e2e2;
+  }
+}
+
 .form-range__line {
   position: relative;
   width: 280px;
   height: 2.2px;
   background-color: #e2e2e2;
   margin-bottom: 25px;
+
+  &:disabled {
+    background-color: #bdbdbd;
+  }
 }
 
 .form-range__scale {
@@ -13,6 +25,10 @@
   width: 241px;
   height: 4px;
   background-color: #9070ec;
+
+  &:disabled {
+    background-color: #bdbdbd;
+  }
 }
 
 .form-range__button {
@@ -25,14 +41,49 @@
   border: 3px solid #9070ec;
   padding: 0;
   cursor: pointer;
+
+  &:disabled {
+    background-color: #bdbdbd;
+  }
+
+  &:hover,
+  &:focus {
+    top: -8.5px;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #ffffff;
+    outline: 3px solid #9070ec;
+    background-color: #dadada;
+  }
+
+  &:active {
+    top: -8.5px;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #ffffff;
+    outline: 3px solid #9070ec;
+    background-color: #7859cf;
+  }
 }
 
 .form-range__button--min {
   left: 0;
+
+  &:hover,
+  &:focus,
+  &:active {
+    left: 2px;
+  }
 }
 
 .form-range__button--max {
   right: 0;
+
+  &:hover,
+  &:focus,
+  &:active {
+    right: 2px;
+  }
 }
 
 .form-range__wrapper {
@@ -52,9 +103,10 @@
 }
 
 .form-range__input {
+  font-family: "Montserrat", sans-serif;
   width: 118px;
   height: 38px;
-  background: #ffffff;
+  background-color: #ffffff;
   border: 2px solid #9070ec;
   border-radius: 4px;
   text-align: center;
@@ -65,6 +117,18 @@
   padding: 4px 26px;
   box-sizing: border-box;
   appearance: none;
+
+  &:focus,
+  &:hover {
+    border: 2px solid #593cac;
+    outline: none;
+  }
+
+  &:disabled {
+    background-color: #f8f8f8;
+    border: 2px solid #e2e2e2;
+    color: #bdbdbd;
+  }
 }
 
 .form-range__input[type="number"] {

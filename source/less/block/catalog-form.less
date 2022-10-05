@@ -29,6 +29,11 @@
   line-height: 24px;
   color: #333333;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: rgba(120, 89, 207, 0.9);
+  }
 }
 
 .catalog-form__label--radio::before {
@@ -36,7 +41,7 @@
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  background: #ffffff;
+  background-color: #ffffff;
   border: 3px solid #bdbdbd;
   position: absolute;
   top: -4px;
@@ -50,6 +55,11 @@
 .catalog-form__label--disabled {
   color: #bdbdbd;
   cursor: default;
+
+  &:hover,
+  &:focus {
+    color: #bdbdbd;
+  }
 }
 
 .catalog-form__input--radio:checked + .catalog-form__label--radio::before {
@@ -63,8 +73,8 @@
   border-radius: 50%;
   background-color: #7859cf;
   position: absolute;
-  top: 2.7px;
-  left: 6.8px;
+  top: 2.9px;
+  left: 7.2px;
 }
 
 .catalog-form__label--checkbox {
@@ -120,6 +130,20 @@
   text-align: center;
   border: none;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: #9070ec;
+    outline: none;
+  }
+
+  &:active {
+    background-color: #593cac;
+  }
+
+  &:disabled {
+    background-color: #bdbdbd;
+  }
 }
 
 .catalog-form__button--submit {
@@ -133,6 +157,23 @@
   background-color: #ffffff;
   border-radius: 4px;
   color: #7859cf;
+
+  &:hover,
+  &:focus {
+    background-color: #9070ec;
+    outline: none;
+    color: #ffffff;
+  }
+
+  &:active {
+    background-color: #593cac;
+    color: #ffffff;
+  }
+
+  &:disabled {
+    background-color: #bdbdbd;
+    color: #ffffff;
+  }
 }
 
 .catalog-form__wrapper:nth-child(3) {
