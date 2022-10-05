@@ -2,6 +2,22 @@
   height: 420px;
 }
 
+.map__image {
+  display: none;
+}
+
+// -----------------------no-js--------------------------
+.map.map--no-js {
+  .map__image {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .map__wrapper {
+    display: none;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .map__wrapper {
     height: 480px;
