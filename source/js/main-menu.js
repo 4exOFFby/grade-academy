@@ -4,7 +4,7 @@ const mainMenu = mainNavigation.querySelector('.pages-navigation');
 const imageClosed = mainNavigation.querySelector('.main-menu-button__icon--closed');
 const imageOpened = mainNavigation.querySelector('.main-menu-button__icon--open');
 
-
+mainNavigation.classList.remove('main-header__navigation--no-js');
 
 const menuToggler = () => {
   imageClosed.classList.toggle('main-menu-button__icon--hidden');
@@ -13,4 +13,4 @@ const menuToggler = () => {
 }
 
 
-export {menuToggler, menuButton, mainNavigation};
+export {menuToggler, menuButton};

@@ -1,3 +1,7 @@
+const mapSection = document.querySelector('.map');
+
+mapSection.classList.remove('map--no-js');
+
 const map = L.map('map')
 .setView({
     lat: 59.96831,
@@ -13,7 +17,7 @@ const map = L.map('map')
 
 
 const mainPinIcon = L.icon({
-  iconUrl: './images/svg/background-svg/map-mark.svg',
+  iconUrl: './img/svg/background-svg/map-mark.svg',
   iconSize: [38, 50],
   iconAnchor: [26, 52],
 });
