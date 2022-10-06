@@ -1,7 +1,7 @@
 .main-navigation {
   position: relative;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-end;
   padding-left: 20px;
 }
@@ -12,11 +12,16 @@
 
 .main-navigation__logo-link {
   margin-right: auto;
+  margin-top: 12px;
 }
 
 @media (min-width: @tablet-width) {
   .main-navigation {
     padding-left: 0;
+  }
+
+  .main-navigation__logo-link {
+    margin-top: 22px;
   }
 }
 
@@ -36,5 +41,6 @@
     font-size: 12px;
     line-height: 16px;
     color: #333333;
+    margin-top: 25px;
   }
 }
