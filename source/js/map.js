@@ -4,9 +4,9 @@ mapSection.classList.remove('map--no-js');
 
 const map = L.map('map')
 .setView({
-    lat: 59.96831,
-    lng: 30.31748,
-  }, 18);
+    lat: 59.96843,
+    lng: 30.31758,
+  }, 20);
 
   L.tileLayer(
     'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
@@ -24,8 +24,8 @@ const mainPinIcon = L.icon({
 
 const mainPinMarker = L.marker(
   {
-    lat: 59.96827,
-    lng: 30.31748,
+    lat: 59.96835,
+    lng: 30.31769,
   },
   {
     draggable: true,

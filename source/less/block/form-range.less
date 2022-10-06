@@ -11,7 +11,7 @@
   width: 280px;
   height: 2.2px;
   background-color: #e2e2e2;
-  margin-bottom: 25px;
+  margin-bottom: 11px;
 
   &:disabled {
     background-color: #bdbdbd;
@@ -22,7 +22,7 @@
   position: absolute;
   top: -1px;
   left: 0;
-  width: 241px;
+  width: 260px;
   height: 4px;
   background-color: #9070ec;
 
@@ -138,10 +138,11 @@
 @media (min-width: @tablet-width) {
   .form-range__line {
     width: 220px;
+    margin-bottom: 7px;
   }
 
   .form-range__scale {
-    width: 190px;
+    width: 200px;
   }
 
   .form-range__input {
@@ -149,7 +150,16 @@
   }
 
   .form-range__wrapper::before {
-    left: 106px;
+    left: 112px;
+  }
+
+  .form-range__container {
+    padding-left: 6px;
+  }
+
+  .form-range__wrapper {
+    padding-left: 6px;
+    width: 220px;
   }
 }
 

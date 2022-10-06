@@ -4,11 +4,15 @@
   line-height: 24px;
   color: #333333;
   margin: 0;
-  margin-bottom: 22px;
+  margin-bottom: 21px;
+}
+
+.catalog-form__range {
+  margin-top: 34px;
 }
 
 .catalog-form__wrapper:not(:last-child) {
-  margin-bottom: 24.5px;
+  margin-bottom: 23px;
 }
 
 .catalog-form__list {
@@ -19,6 +23,10 @@
 
 .catalog-form__item:not(:last-child) {
   margin-bottom: 22px;
+}
+
+.catalog-form__item--checkbox:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 .catalog-form__label {
@@ -38,14 +46,14 @@
 
 .catalog-form__label--radio::before {
   content: "";
-  width: 24px;
-  height: 24px;
+  width: 22px;
+  height: 22px;
   border-radius: 50%;
   background-color: #ffffff;
   border: 3px solid #bdbdbd;
   position: absolute;
   top: -4px;
-  left: 0;
+  left: -2px;
 }
 
 .catalog-form__input--radio:disabled + .catalog-form__label--radio::before {
@@ -68,13 +76,13 @@
 
 .catalog-form__input--radio:checked + .catalog-form__label--radio::after {
   content: "";
-  width: 16px;
-  height: 16px;
+  width: 17px;
+  height: 17px;
   border-radius: 50%;
   background-color: #7859cf;
   position: absolute;
-  top: 2.9px;
-  left: 7.2px;
+  top: 1.5px;
+  left: 4px;
 }
 
 .catalog-form__label--checkbox {
@@ -195,7 +203,27 @@
   .catalog-form__form {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 25px;
+    column-gap: 14px;
+  }
+
+  .catalog-form__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .catalog-form__item--checkbox:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .catalog-form__label--radio::before {
+    width: 20px;
+    height: 20px;
+  }
+
+  .catalog-form__input--radio:checked + .catalog-form__label--radio::after {
+    width: 16px;
+    height: 16px;
+    top: 1.5px;
+    left: 3px;
   }
 
   .catalog-form__wrapper--button-wrapper {
@@ -205,16 +233,19 @@
     align-items: center;
     justify-content: space-between;
     grid-column: 1/-1;
-    margin-top: 40px;
+    margin-top: 4px;
+    margin-right: 233px;
   }
 
   .catalog-form__button--reset {
     width: 138px;
+    min-height: 40px;
   }
 
   .catalog-form__button--submit {
     margin-bottom: 0;
     width: 148px;
+    min-height: 40px;
   }
 }
 
