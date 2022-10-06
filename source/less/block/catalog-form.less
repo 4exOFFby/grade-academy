@@ -203,7 +203,27 @@
   .catalog-form__form {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 25px;
+    column-gap: 14px;
+  }
+
+  .catalog-form__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .catalog-form__item--checkbox:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .catalog-form__label--radio::before {
+    width: 20px;
+    height: 20px;
+  }
+
+  .catalog-form__input--radio:checked + .catalog-form__label--radio::after {
+    width: 16px;
+    height: 16px;
+    top: 1.5px;
+    left: 3px;
   }
 
   .catalog-form__wrapper--button-wrapper {
@@ -213,16 +233,19 @@
     align-items: center;
     justify-content: space-between;
     grid-column: 1/-1;
-    margin-top: 40px;
+    margin-top: 4px;
+    margin-right: 233px;
   }
 
   .catalog-form__button--reset {
     width: 138px;
+    min-height: 40px;
   }
 
   .catalog-form__button--submit {
     margin-bottom: 0;
     width: 148px;
+    min-height: 40px;
   }
 }
 
