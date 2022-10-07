@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../img/favicon/favicon-32x32.png" sizes="32x32">
     <link rel="stylesheet" href="./css/leaflet.min.css">
     <link rel="stylesheet" href="./css/style.min.css">
     <title>Кофейные напитки Drink2Go</title>
@@ -202,7 +201,7 @@
       </section>
 
       <!-- Catalog -->
-      <section class="catalog">
+      <section class="catalog" id="catalog">
         <div class="catalog-container catalog__grid-container">
           <b class="catalog__mark">Каталог</b>
           <h2 class="catalog__title">Каталог кофейных напитков</h2>
@@ -461,8 +460,8 @@
       <section class="map map--no-js">
         <h2 class="visually-hidden">Где мы находимся на карте</h2>
         <picture class="map__picture">
-          <source class="map__image map__image--desktop" media="(min-width: 1440px)" srcset="./img/jpg/map-desktop.jpg 1x, ./img/jpg/map-desktop.jpg 2x" width="1440" height="540" alt="Наше местоположение на карте">
-            <source class="map__image map__image--tablet" media="(min-width: 768px)" srcset="./img/jpg/map-tablet.jpg 1x, ./img/jpg/map-tablet.jpg 2x" width="768" height="480" alt="Наше местоположение на карте">
+          <source class="map__image map__image--desktop" media="(min-width: 1440px)" srcset="./img/jpg/map-desktop.jpg 1x, ./img/jpg/map-desktop.jpg 2x" width="1440" height="540">
+            <source class="map__image map__image--tablet" media="(min-width: 768px)" srcset="./img/jpg/map-tablet.jpg 1x, ./img/jpg/map-tablet.jpg 2x" width="768" height="480">
             <source type="image/webp" media="(min-width: 1440px)" srcset="./img/jpg/map-desktop.jpg 1x, ./img/jpg/map-desktop.jpg 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="./img/jpg/map-tablet.jpg 1x, ./img/jpg/map-tablet.jpg 2x">
             <source type="image/webp" srcset="./img/jpg/map-mobile.jpg 1x, ./img/jpg/map-mobile.jpg 2x">
@@ -477,7 +476,7 @@
       <section class="footer-social">
         <h2 class="visually-hidden">Мы в социальных сетях</h2>
         <div class="footer-container footer-social__wrapper">
-          <a class="main-footer__logo-link" href="#">
+          <a class="main-footer__logo-link">
             <svg class="main-footer__logo-link main-footer__logo-link--tablet" width="82" height="36" viewBox="0 0 82 36" fill="none" xmlns="http://www.w3.org/2000/svg">
               <use xlink:href="./img/svg/sprite.svg#logo-tablet"></use>
             </svg>
@@ -517,7 +516,7 @@
             <h2 class="footer-pages-navigation__title main-footer__title">Интернет-магазин</h2>
             <ul class="footer-pages-navigation__list main-footer__list">
               <li class="footer-pages-navigation__item main-footer__item">
-                <a class="footer-pages-navigation__link main-footer__link" href="#">Каталог</a>
+                <a class="footer-pages-navigation__link main-footer__link" href="#catalog">Каталог</a>
               </li>
               <li class="footer-pages-navigation__item main-footer__item">
                 <a class="footer-pages-navigation__link main-footer__link" href="#">Доставка</a>

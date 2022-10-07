@@ -8,7 +8,3 @@ const openSortingMenuHandler = (evt) => {
 }
 
 export {sortingMenuButton, openSortingMenuHandler};
-
-
-
-
